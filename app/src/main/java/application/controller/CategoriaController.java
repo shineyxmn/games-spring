@@ -15,5 +15,12 @@ import application.repository.CategoriaRepository;
 @Controller
 @RequestMapping("/categoria")
 public class CategoriaController {
+    @Autowired
+    private CategoriaRepository categoriaRepo;
 
+    @RequestMapping("/list")
+    public String list(Model ui) {
+        ui.addAttribute("categorias", categoriaRepo.findAll());
+        return "categorias/list";
+    }
 }
