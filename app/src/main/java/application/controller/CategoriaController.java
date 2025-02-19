@@ -56,7 +56,7 @@ public class CategoriaController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String update(
         @RequestParam("id") long id,
-        @RequestParam("nome") String nome){
+        @RequestParam("nome") String nome ){
 
         Optional<Categoria> categoria = categoriaRepo.findById(id);
 
@@ -88,6 +88,5 @@ public class CategoriaController {
         categoriaRepo.deleteById(id);
 
         return "redirect:/categoria/list";
-    
     }
 }

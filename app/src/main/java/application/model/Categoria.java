@@ -1,5 +1,6 @@
 package application.model;
- 
+
+import application.model.Jogo;
 import java.util.HashSet;
 import java.util.Set;
  
@@ -48,7 +49,8 @@ public class Categoria {
         return jogos;
     }
 
-    public void setJogos (Set<jogo> jogos) {
+    public void setJogos (Set<Jogo> jogos) {
         this.jogos = jogos;
     }
 }
+
