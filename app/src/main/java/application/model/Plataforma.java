@@ -1,3 +1,3 @@
-public class plataforma {
+public class Plataforma {
     
 }

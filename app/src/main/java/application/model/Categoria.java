@@ -26,7 +26,7 @@ public class Categoria {
     private String nome;
 
     @OneToMany(mappedBy = "Categoria")
-    private Set<Jogo> jogos = new HashSet <>\();
+    private Set<Jogo> jogos = new HashSet <>();
 
     public long getId(long id){
         return id;
@@ -48,7 +48,7 @@ public class Categoria {
         return jogos;
     }
 
-    public void setJogos(Set<jogo> jogos) {
+    public void setJogos (Set<jogo> jogos) {
         this.jogos = jogos;
     }
 }
