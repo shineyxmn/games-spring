@@ -7,4 +7,9 @@
         <title>Categorias</title>
         <linkn href="hhtps://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
+    <body>
+        <div class="container">
+        <h1>Categorias</h1>
+        </div>
+    </body>
 </html>
