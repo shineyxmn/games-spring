@@ -53,7 +53,7 @@ public class JogoController {
         for(long p : idsPlataformas) {
             Optional<Plataforma> plataforma = plataformaRepo.findById(p);
             if(plataforma.isPresent()) {
-                jogo.getPlataforma().add(plataforma.get());
+                jogo.getPlataformas().add(plataforma.get());
             }
         }
         jogoRepo.save(jogo);

@@ -30,7 +30,7 @@ public class Jogo {
 
     @ManyToMany
     @JoinTable(
-        name = "jogos_possui_plataformas",
+        name = "jogos_possuem_plataformas",
         joinColumns = @JoinColumn(name = "id_jogos"),
         inverseJoinColumns = @JoinColumn(name = "id_plataformas")
     )
@@ -67,4 +67,6 @@ public class Jogo {
     public void setPlataformas(Set<Plataforma> plataformas) {
         this.plataformas = plataformas;
     }
+
+    
 }
