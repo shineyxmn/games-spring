@@ -53,13 +53,13 @@ public class JogoController {
         for(long p : idsPlataformas) {
             Optional<Plataforma> plataforma = plataformaRepo.findById(p);
             if(plataforma.isPresent()) {
-                jogo.getPlataformas().add(plataforma.get());
+                jogo.getPlataforma().add(plataforma.get());
             }
         }
         jogoRepo.save(jogo);
         return "redirect:/jogo/list";
     }
-}
+
 
 @RequestMapping("/update")
 public String update(
