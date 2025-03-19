@@ -19,5 +19,6 @@ dependencies {
     implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.apache.commons:commons-csv:1.9.0'
+    implementation 'javax.servlet:jstl'
 }
  
